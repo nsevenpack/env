@@ -1,0 +1,11 @@
+services:
+  env-pack-go:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: env-pack-go
+    image: env-pack-go
+    volumes:
+      - ../:/app
+    stdin_open: true
+    tty: true
