@@ -8,19 +8,20 @@ import (
 	"sync"
 )
 
-var (
-	once         sync.Once
-	envFileNames = []string{".env"} // liste de fichiers à loader // par defaut .env
-)
-
-func SetEnvFiles(files ...string) {
-	envFileNames = files
-}
+var once sync.Once
 
 func loadEnvOnce() {
-	for _, f := range envFileNames {
-		envPath := filepath.Join(rootproject.Root(), f)
-		_ = godotenv.Overload(envPath) // Overload fusionne, Load charge une seule fois
+	root := rootproject.Root()
+	baseEnv := filepath.Join(root, ".env")
+
+	// .env de base
+	_ = godotenv.Load(baseEnv)
+
+	// surcharger avec .env spécifique en fonction de APP_ENV de l'os
+	appEnv := os.Getenv("APP_ENV")
+	if appEnv != "" && appEnv != "dev" {
+		specificEnv := filepath.Join(root, ".env."+appEnv)
+		_ = godotenv.Overload(specificEnv)
 	}
 }
 
