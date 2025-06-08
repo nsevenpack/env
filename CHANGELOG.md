@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/nsevenpack/env/compare/v1.0.1...v1.0.2) (2025-06-08)
+
+
+### Bug Fixes
+
+* dynamique name env file ([8b71657](https://github.com/nsevenpack/env/commit/8b71657b404fc9b9c367e8a8c92a5d4da08252ea))
+
 ## [1.0.1](https://github.com/nsevenpack/env/compare/v1.0.0...v1.0.1) (2025-06-08)
 
 
