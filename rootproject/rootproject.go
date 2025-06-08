@@ -24,7 +24,7 @@ func find() string {
 		}
 		dir = parent
 	}
-	log.Fatal("[FATAL] Impossible de trouver la racine du projet (go.mod manquant)")
+	log.Fatal("[FATAL] Impossible de trouver la racine du projet pas de go.mod")
 	return ""
 }
 
