@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/nsevenpack/env/compare/v1.0.0...v1.0.1) (2025-06-08)
+
+
+### Bug Fixes
+
+* add doc ([32646e0](https://github.com/nsevenpack/env/commit/32646e0a83b48b3dbf62121bb7cc26d9d77f290c))
+
 # 1.0.0 (2025-06-08)
 
 
