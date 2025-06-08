@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nsevenpack/ginresponse.git"
+    "url": "git+https://github.com/nsevenpack/env.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nsevenpack/ginresponse/issues"
+    "url": "https://github.com/nsevenpack/env/issues"
   },
-  "homepage": "https://github.com/nsevenpack/ginresponse#readme"
+  "homepage": "https://github.com/nsevenpack/env#readme"
 }
