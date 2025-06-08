@@ -12,18 +12,12 @@ Package de configuration d'environnement simple pour Go, pour recupérer les var
 ```bash
 # installe la derniere version 1.x.x
 go get github.com/nsevenpack/env@latest
-# installe la derniere version 2.x.x
-go get github.com/nsevenpack/env/v2@latest
 
 # liste les versions disponibles pour 1.x.x
 go list -m -versions github.com/nsevenpack/env
-# liste les versions disponibles pour 2.x.x
-go list -m -versions github.com/nsevenpack/env/v2
 
 # installe une version précise
 go get github.com/nsevenpack/env@v1.1.0
-# ou par version majeure
-go get github.com/nsevenpack/env/v2@v2.0.1
 ```
 
 ## Fonctionnalités
