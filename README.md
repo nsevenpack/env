@@ -22,4 +22,27 @@ go get github.com/nsevenpack/env@v1.1.0
 
 ## Fonctionnalités
 
+- Initialisation des variables d'environnement à partir d'un fichier `.env`.
+ou autres fichier `.env` il est possible de les surcharger.
+
 ## Utilisation
+```go
+package main
+import (
+    "github.com/nsevenpack/env"
+)
+
+func main() {
+	env.SetEnvFileName(".env.dev")
+	val := env.Get("MON_SECRET")
+	// ...
+}
+
+// avec plusieurs fichiers env
+func main() {
+	env.SetEnvFileName(".env.dev", ".env.test", etc ...)
+	val := env.Get("MON_SECRET")
+	// ...
+}
+
+```
