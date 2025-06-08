@@ -23,6 +23,3 @@ go get github.com/nsevenpack/env@v1.1.0
 ## Fonctionnalités
 
 ## Utilisation
-
-```golang
-```
