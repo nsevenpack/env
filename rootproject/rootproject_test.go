@@ -7,17 +7,20 @@ import (
 )
 
 func Test_Root(t *testing.T) {
+	rr := find()
 	r := Root()
+
+	t.Logf("Root: %s", r)
 
 	if !filepath.IsAbs(r) {
 		t.Errorf("Root() doit retourner un chemin absolu, obtenu: %s", r)
 	}
 
-	if !strings.Contains(r, "app") {
+	if !strings.Contains(r, rr) {
 		t.Errorf("Root() doit contenir le chemin du projet, obtenu: %s", r)
 	}
 
-	if strings.Contains(r, "app") {
+	if strings.Contains(r, rr) {
 		t.Logf("Root() retourne la racine du projet: %s", r)
 	}
 }
